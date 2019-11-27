@@ -25,8 +25,10 @@ SECRET_KEY = 'gq_evf@^2erir^0rpm#^(6a705s5^sqr09-)vvp+!faqj1=5!4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framwork.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
 
 # Application definition
 
@@ -37,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'bank',
+    'main',
+    'drf',
 ]
 
 MIDDLEWARE = [
