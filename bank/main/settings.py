@@ -26,7 +26,7 @@ SECRET_KEY = 'gq_evf@^2erir^0rpm#^(6a705s5^sqr09-)vvp+!faqj1=5!4'
 DEBUG = True
 
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framwork.pagination.PageNumberPagination',
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
 
@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'bank',
     'main',
     'drf',
+    'bank2',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
