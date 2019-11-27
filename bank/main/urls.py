@@ -25,6 +25,7 @@ router.register(r'users', views.User_Viewset)
 router.register(r'groups', views.Group_Viewset)
 router.register(r'branch', bank2_views.Branch_Viewsets)
 router.register(r'customer', bank2_views.Customer_Viewsets)
+router.register(r'product', bank2_views.Product_Viewsets)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
